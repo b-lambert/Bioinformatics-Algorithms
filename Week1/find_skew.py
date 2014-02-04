@@ -8,7 +8,6 @@ def find_skew(genome):
 		elif char == 'G':
 			skew += 1
 		skew_diagram.append(str(skew))
-	#return(' '.join(skew_diagram))
 	return skew_diagram
 	
 def minimum_skew(genome):
@@ -30,5 +29,5 @@ def minimum_skew(genome):
 	return(' '.join(min_indices))
 
 def test():
-	genome = 'GAGCCACCGCGATA'
+	genome = 'TAAAGACTGCCGAGAGGCCAACACGAGTGCTAGAACGAGGGGCGTAAACGCGGGTCCGAT'
 	return find_skew(genome)
